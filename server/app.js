@@ -1,5 +1,5 @@
 const express = require("express");
-const { graphqlHTTP } = require("express-graphql");
+const { graphqlHTTP } = require("express-graphql"); // This might change based on the dependency version installed
 const schema = require("./schema/schema");
 
 const app = express();
