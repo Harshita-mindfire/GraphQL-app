@@ -1,0 +1,25 @@
+Example queries to try in GraphiQL
+
+{
+    books{
+      name
+      genre
+      author {
+        name
+      }
+    }
+    authors {
+      name
+      books {
+        name
+      }
+    }
+    book(id:"65606f69b6cd963d220c9cf9"){
+      name
+    }
+    author(id:"65606ec47ee9ce2f4307940e"){
+      name 
+      age
+    }
+  }
+  
