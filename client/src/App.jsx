@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
+import BookList from "./components/BookList";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div id="main" className="App">
       <h1>Reading List</h1>
+      <BookList />
     </div>
   );
 }

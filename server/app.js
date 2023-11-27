@@ -3,12 +3,13 @@ const { graphqlHTTP } = require("express-graphql"); // This might change based o
 const schema = require("./schema/schema");
 const mongoose = require("mongoose");
 const app = express();
+const cors = require("cors");
 
 // connect to mongo atlas db
 // add mongoose.connect here. I have commented it out for security reasons.
 
 mongoose.connection.once("open", () => console.log("connected to DB"));
-
+app.use(cors());
 app.use(
   "/graphql",
   graphqlHTTP({
